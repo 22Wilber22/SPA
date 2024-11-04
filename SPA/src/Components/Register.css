@@ -1,0 +1,99 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #1db954, #191414);
+  padding: 20px;
+}
+
+.form-register {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-register h1 {
+  color: #191414;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #1db954;
+  outline: none;
+}
+
+.error-message {
+  color: #e91429;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.register-button {
+  width: 100%;
+  padding: 14px;
+  background: #1db954;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background: #1ed760;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.link {
+  color: #1db954;
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #1ed760;
+}
+
+@media (max-width: 480px) {
+  .form-register {
+      padding: 20px;
+  }
+}

@@ -1,0 +1,182 @@
+.container {
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  color: #1db954;
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #1db954;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.titulo {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+/* Playlist Section */
+.playlist-card {
+  background: linear-gradient(45deg, #1db954, #169c46);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.playlist-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.play-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+.playlist-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.playlist-info p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Grid Layouts */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.artists, .recommendations {
+  background-color: #282828;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.artists h2, .recommendations h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.artist-card, .recommendation-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background-color: #181818;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.artist-card:hover, .recommendation-card:hover {
+  background-color: #282828;
+}
+
+.artist-image {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.album-card {
+  background-color: #181818;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.album-card:hover {
+  background-color: #282828;
+}
+
+.album-image {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #333;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.album-card p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul {
+    gap: 1rem;
+  }
+
+  .navbar a {
+    font-size: 0.8rem;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+}

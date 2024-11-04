@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #1db954;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --secondary-text-color: #b3b3b3;
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section, .parte-media, .aside {
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.albumnes, .exitos, .playlist {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.albumnes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exitos, .playlist {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
